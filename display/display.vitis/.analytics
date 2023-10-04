@@ -1,0 +1,19 @@
+timestamp=[2023-06-23 16:55:37], mode=WORKBENCH_START, duration=0:00:03.006, duration_ms=3006, data={}
+timestamp=[2023-06-23 16:55:37], mode=WORKBENCH_UI_INIT, duration=0:00:00.184, duration_ms=184, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-06-23 16:55:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.251, duration_ms=251, data={}
+timestamp=[2023-06-23 16:56:26], mode=APP_CREATION, duration=0:00:13.794, duration_ms=13794, data={name=display, project_type=sdk, os=standalone, processor=ps7_cortexa9, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2023-06-23 16:56:48], mode=PLATFORM_GENERATION, duration=0:00:10.895, duration_ms=10895, data={name=design_1_wrapper}
+timestamp=[2023-06-23 16:56:50], mode=BUILD, duration=0:00:01.413, duration_ms=1413, data={name=display, configuration=Debug, clean_build=false}
+timestamp=[2023-06-23 17:31:09], mode=PLATFORM_GENERATION, duration=0:00:06.071, duration_ms=6071, data={name=design_1_wrapper}
+timestamp=[2023-06-23 17:31:12], mode=BUILD, duration=0:00:00.721, duration_ms=721, data={name=display, configuration=Debug, clean_build=false}
+timestamp=[2023-07-12 14:40:30], mode=WORKBENCH_START, duration=0:00:05.160, duration_ms=5160, data={}
+timestamp=[2023-07-12 14:40:30], mode=WORKBENCH_UI_INIT, duration=0:00:00.319, duration_ms=319, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,design_1_wrapper,display,display_system}
+timestamp=[2023-07-12 14:40:31], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.334, duration_ms=334, data={}
+timestamp=[2023-07-12 14:41:54], mode=PLATFORM_GENERATION, duration=0:00:18.304, duration_ms=18304, data={name=design_1_wrapper}
+timestamp=[2023-07-12 14:41:56], mode=BUILD, duration=0:00:00.498, duration_ms=498, data={name=display, configuration=Debug, clean_build=false}
+timestamp=[2023-07-12 14:42:44], mode=PLATFORM_GENERATION, duration=0:00:06.207, duration_ms=6207, data={name=design_1_wrapper}
+timestamp=[2023-07-12 14:42:45], mode=BUILD, duration=0:00:00.181, duration_ms=181, data={name=display, configuration=Debug, clean_build=true}
+timestamp=[2023-07-12 14:42:47], mode=BUILD, duration=0:00:00.785, duration_ms=785, data={name=display, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:54:38], mode=APP_CREATION, duration=0:00:05.150, duration_ms=5150, data={name=disp_int_test, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=design_1_wrapper, application_type=application}
+timestamp=[2023-07-14 15:55:32], mode=BUILD, duration=0:00:01.367, duration_ms=1367, data={name=disp_int_test, configuration=Debug, clean_build=false}
+timestamp=[2023-07-14 15:55:38], mode=BUILD, duration=0:00:05.429, duration_ms=5429, data={name=disp_int_test_system, configuration=Debug, clean_build=false}

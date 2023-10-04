@@ -1,0 +1,27 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../disp_ip/hdl" --include "../../../../sim_display.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../../display.tmp/display_v1_0_project/display_v1_0_project.gen/sources_1/ip/fifo_48in24out_1024depth/sim/fifo_48in24out_1024depth.v" \
+"../../../../../disp_ip/hdl/clock_sync.v" \
+"../../../../../disp_ip/hdl/disp_buffer.v" \
+"../../../../../disp_ip/hdl/disp_regctrl.v" \
+"../../../../../disp_ip/hdl/disp_vramctrl.v" \
+"../../../../../disp_ip/hdl/syncgen.v" \
+"../../../../../disp_ip/hdl/display.v" \
+
+sv xil_defaultlib  --include "../../../../../disp_ip/hdl" --include "../../../../sim_display.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../sim_display.ip_user_files/bd/design_1/ip/design_1_axi_vip_0_0/sim/design_1_axi_vip_0_0_pkg.sv" \
+"../../../../sim_display.ip_user_files/bd/design_1/ip/design_1_axi_vip_0_0/sim/design_1_axi_vip_0_0.sv" \
+
+verilog xil_defaultlib  --include "../../../../../disp_ip/hdl" --include "../../../../sim_display.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../sim_display.ip_user_files/bd/design_1/ip/design_1_display_0_0/sim/design_1_display_0_0.v" \
+"../../../../sim_display.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../sim_display.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+sv xil_defaultlib  --include "../../../../../disp_ip/hdl" --include "../../../../sim_display.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../tb/tb_disp2.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

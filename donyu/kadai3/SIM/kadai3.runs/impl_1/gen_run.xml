@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1684161795">
+  <File Type="ROUTE-PWR" Name="kadai3_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="kadai3.tcl"/>
+  <File Type="BITSTR-MMI" Name="kadai3.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="kadai3_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="kadai3_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="kadai3_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="kadai3_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="kadai3_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="kadai3_opt.dcp"/>
+  <File Type="OPT-DRC" Name="kadai3_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="kadai3.hwdef"/>
+  <File Type="PWROPT-DCP" Name="kadai3_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="kadai3_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="kadai3_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="kadai3_placed.dcp"/>
+  <File Type="PLACE-IO" Name="kadai3_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="kadai3_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="kadai3_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="kadai3_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="kadai3_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="kadai3_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="kadai3_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="kadai3.bin"/>
+  <File Type="PLACE-TIMING" Name="kadai3_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="kadai3_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="kadai3.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="kadai3_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="kadai3_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="kadai3_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="kadai3.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="kadai3_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="kadai3_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="kadai3_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="kadai3_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="kadai3_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="kadai3_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="kadai3_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="kadai3_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="kadai3_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="kadai3_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="kadai3_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="kadai3_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="kadai3_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="kadai3_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="kadai3_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="kadai3_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="kadai3_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="kadai3_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="kadai3_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="kadai3_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="kadai3_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="kadai3_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="kadai3_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="kadai3_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="kadai3_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="kadai3_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="kadai3_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="kadai3.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="kadai3_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="kadai3_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="kadai3.nky"/>
+  <File Type="BITSTR-BMM" Name="kadai3_bd.bmm"/>
+  <File Type="PDI-FILE" Name="kadai3.pdi"/>
+  <File Type="RCFI_FILE" Name="kadai3.rcfi"/>
+  <File Type="CFI_FILE" Name="kadai3.cfi"/>
+  <File Type="RNPI_FILE" Name="kadai3.rnpi"/>
+  <File Type="NPI_FILE" Name="kadai3.npi"/>
+  <File Type="RBD_FILE" Name="kadai3.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="kadai3.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="kadai3.sysdef"/>
+  <File Type="BG-BGN" Name="kadai3.bgn"/>
+  <File Type="BG-DRC" Name="kadai3.drc"/>
+  <File Type="RDI-RDI" Name="kadai3.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="kadai3_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="kadai3_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../../kadai1/hdl/extend_and.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../kadai2/hdl/fifo.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/fifo_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../adder/full_adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../adder/half_adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../kadai1/hdl/mult.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../hdl/kadai3.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="kadai3"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/kadai3.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

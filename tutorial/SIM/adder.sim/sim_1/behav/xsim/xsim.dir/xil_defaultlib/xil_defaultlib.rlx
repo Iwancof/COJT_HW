@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/HW101.COJTHW/COJT/tutorial/SIM/adder.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/tutorial/SIM/tb/tb_adder.v,1682487335,verilog,,,,tb_adder,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/tutorial/SIM/tb/tb_readmem.v,1586652838,verilog,,,,tb_readmem,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/tutorial/hdl/full_adder.v,1238462106,verilog,,C:/Users/HW101.COJTHW/COJT/tutorial/hdl/half_adder.v,,full_adder,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/tutorial/hdl/half_adder.v,1238375984,verilog,,C:/Users/HW101.COJTHW/COJT/tutorial/hdl/ripple_adder.v,,half_adder,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/tutorial/hdl/ripple_adder.v,1238464474,verilog,,C:/Users/HW101.COJTHW/COJT/tutorial/SIM/tb/tb_adder.v,,ripple_adder,,,,,,,,

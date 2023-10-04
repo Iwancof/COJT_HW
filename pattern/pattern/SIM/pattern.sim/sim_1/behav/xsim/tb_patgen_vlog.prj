@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../pattern.gen/sources_1/bd/design_1/ipshared/65c9/hdl/dclkgen" --include "../../../../pattern.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../pattern.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "../../../../pattern.gen/sources_1/bd/design_1/ipshared/d6d2/hdl" --include "../../../../../patgen_ip/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../../patgen_ip/hdl/patgen.v" \
+"../../../../../patgen_ip/hdl/syncgen.v" \
+"../../../../tb/tb_patgen.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,55 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.615572",
+   "Default View_TopLeft":"-530,-91",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_ACLK -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port port-id_ARESETN -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port port-id_DCLK -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace port port-id_DSP_DE -pg 1 -lvl 3 -x 590 -y 280 -defaultsOSRD
+preplace port port-id_DSP_FIFO_OVER -pg 1 -lvl 3 -x 590 -y 360 -defaultsOSRD
+preplace port port-id_DSP_FIFO_UNDER -pg 1 -lvl 3 -x 590 -y 380 -defaultsOSRD
+preplace port port-id_DSP_HSYNC_X -pg 1 -lvl 3 -x 590 -y 300 -defaultsOSRD
+preplace port port-id_DSP_IRQ -pg 1 -lvl 3 -x 590 -y 60 -defaultsOSRD
+preplace port port-id_DSP_VSYNC_X -pg 1 -lvl 3 -x 590 -y 320 -defaultsOSRD
+preplace port port-id_RDEN -pg 1 -lvl 0 -x 0 -y 370 -defaultsOSRD
+preplace port port-id_WREN -pg 1 -lvl 0 -x 0 -y 310 -defaultsOSRD
+preplace portBus BYTEEN -pg 1 -lvl 0 -x 0 -y 290 -defaultsOSRD
+preplace portBus DSP_B -pg 1 -lvl 3 -x 590 -y 260 -defaultsOSRD
+preplace portBus DSP_G -pg 1 -lvl 3 -x 590 -y 240 -defaultsOSRD
+preplace portBus DSP_R -pg 1 -lvl 3 -x 590 -y 220 -defaultsOSRD
+preplace portBus RDADDR -pg 1 -lvl 0 -x 0 -y 350 -defaultsOSRD
+preplace portBus RDATA -pg 1 -lvl 3 -x 590 -y 340 -defaultsOSRD
+preplace portBus RESOL -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
+preplace portBus WDATA -pg 1 -lvl 0 -x 0 -y 330 -defaultsOSRD
+preplace portBus WRADDR -pg 1 -lvl 0 -x 0 -y 270 -defaultsOSRD
+preplace inst axi_vip_0 -pg 1 -lvl 2 -x 470 -y 140 -defaultsOSRD
+preplace inst display_0 -pg 1 -lvl 1 -x 190 -y 280 -defaultsOSRD
+preplace netloc ACLK_0_1 1 0 2 30 120 350J
+preplace netloc ARESETN_0_1 1 0 2 20 110 360J
+preplace netloc BYTEEN_0_1 1 0 1 NJ 290
+preplace netloc DCLK_0_1 1 0 1 NJ 230
+preplace netloc RDADDR_0_1 1 0 1 NJ 350
+preplace netloc RDEN_0_1 1 0 1 NJ 370
+preplace netloc RESOL_0_1 1 0 1 NJ 250
+preplace netloc WDATA_0_1 1 0 1 NJ 330
+preplace netloc WRADDR_0_1 1 0 1 NJ 270
+preplace netloc WREN_0_1 1 0 1 NJ 310
+preplace netloc display_0_DSP_B 1 1 2 NJ 260 NJ
+preplace netloc display_0_DSP_DE 1 1 2 NJ 280 NJ
+preplace netloc display_0_DSP_FIFO_OVER 1 1 2 NJ 360 NJ
+preplace netloc display_0_DSP_FIFO_UNDER 1 1 2 NJ 380 NJ
+preplace netloc display_0_DSP_G 1 1 2 NJ 240 NJ
+preplace netloc display_0_DSP_HSYNC_X 1 1 2 NJ 300 NJ
+preplace netloc display_0_DSP_IRQ 1 1 2 370J 60 NJ
+preplace netloc display_0_DSP_R 1 1 2 NJ 220 NJ
+preplace netloc display_0_DSP_VSYNC_X 1 1 2 NJ 320 NJ
+preplace netloc display_0_RDATA 1 1 2 NJ 340 NJ
+preplace netloc display_0_M_AXI 1 1 1 380 120n
+levelinfo -pg 1 0 190 470 590
+pagesize -pg 1 -db -bbox -sgen -150 0 770 440
+"
+}
+0

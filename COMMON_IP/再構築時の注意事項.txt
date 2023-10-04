@@ -1,0 +1,36 @@
+＜各IPを新バージョンのVivadoで再構築する際の注意事項＞
+
+★新バージョンで開けばupgradeするか否か聞いてくるので、指示にしたがって
+　upgradeすることは可能だが、後々のトラブルはゼロではないので、一から構築し
+　直すのが最良
+
+●共通項目
+・xguiフォルダとcomponent.xmlを削除しておく
+・親階層のプロジェクト（patternやdisplayなど）で「Create and Packege New IP」
+　コマンドで各IPを再構築する
+
+●dispsub_ip
+・DVI_CLKにはクロックの属性が付加されているので、「Ports and Interfaces」での
+　「Remove Interface」コマンドで属性を削除する
+　（取り除かないとクロック制約がないことによる不具合が、後々の工程で出たような）
+・ARESETNにはリセット属性が付加されているが対応不要
+
+●regbus_ip
+・IP構築時に「Identification」の「Name」を、「regbus_v2_0」→「regbus」に修正
+・これをしないとレジスタのマクロ定義名が一致せずVitisのビルド時にエラーになる
+
+●sccb_ip
+・IP構築時に「Identification」の「Name」を、「sccb_v1_0」→「sccb」に修正
+・これをしないとレジスタのマクロ定義名が一致せずVitisのビルド時にエラーになる
+
+●ps2if_ip
+・「Create and Packege New IP」でps2if_ipのフォルダを開く前に、hdlフォルダ内の
+　VHDLファイル（ps2interface.vhdなど）をps2if_ipフォルダ以外のどこか見えないところに
+　隠しておく
+・これをしないと、VHDL混在が悪さしているのか「Create and Packege New IP」でプロジェ
+　クト作成時にエラーになりプロジェクトを作成できない
+・プロジェクト作成後にVHDLファイルを元に戻し、Add Sourcesで追加する
+
+・さらに「Identification」の「Name」を、「ps2if_v1_0」→「ps2if」に修正
+・これをしないとレジスタのマクロ定義名が一致せず、Vitisでの実行時に例外を発生する
+　（cojt.hの中で未実装システム向けに無意味なアドレスを設定しているため）
