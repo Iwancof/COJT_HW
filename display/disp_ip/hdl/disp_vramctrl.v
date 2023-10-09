@@ -1,5 +1,5 @@
 //-----------------------------------------------------------------------------
-// Title       : VRAM?øΩ?øΩ?øΩ?øΩi?øΩ?øΩu?øΩ“ê›åv?øΩŒè€Åj
+// Title       : VRAM?ÔøΩÔøΩ?ÔøΩÔøΩ?ÔøΩÔøΩ?ÔøΩÔøΩi?ÔøΩÔøΩ?ÔøΩÔøΩu?ÔøΩÔøΩ“ê›åv?ÔøΩÔøΩŒè€Åj
 // Project     : display
 // Filename    : disp_vramctrl.v
 //-----------------------------------------------------------------------------
@@ -35,20 +35,46 @@ module disp_vramctrl (
 
   `include "syncgen_param.vh"
 
-  localparam S_IDEL = 2'b00;
-  localparam S_SETADDR = 2'b01;
-  localparam S_READ = 2'b10;
-  localparam S_WAIT = 2'b11;
-
-  // assign M_AXI_ARLEN   = 8'h31;  // 32 words
-  // assign M_AXI_ARSIZE  = 3'b011; // 8 byte
-  localparam bytesize_per_burst = 32'd32 * 32'd8;
-
-  reg[1: 0] state, next;
-  reg[31: 0] current_address;
-  reg[31: 0] window_last_address;
   wire vr_start;
+  clock_sync #(.WIDTH(1)) clock_sync(
+    .clk(ACLK),
+    .foreign_signal(VRSTART),
+    .result(vr_start)
+  );
 
+  reg[32: 0] unhandled_request;
+  always @(posedge ACLK) begin
+    if(ARST) begin
+      unhandled_request <= 0;
+    end else begin
+      if(address_read_done && found_last) begin
+        // ‰Ωï„ÇÇ„Åó„Å™„ÅÑ
+      end else if (address_read_done && !found_last) begin
+        unhandled_request <= unhandled_request + 1;
+      end else if (!address_read_done && found_last) begin
+        unhandled_request <= unhandled_request - 1;
+      end
+    end
+  end
+
+
+  // ----- State machine of ADDRESS READ -----
+  localparam AR_IDLE  = 2'b00;
+  localparam AR_SADDR = 2'b01;
+  localparam AR_WAIT  = 2'b10;
+  reg[1: 0] ar_state, ar_next;
+
+  always @(posedge ACLK) begin
+    if (ARST) begin
+      ar_state <= AR_IDLE;
+    end else begin
+      ar_state <= ar_next;
+    end
+  end
+
+  // address control
+  localparam bytesize_per_burst = 32'd32 * 32'd8;
+  reg[31: 0] window_last_address;
   always @(posedge ACLK) begin
     if(ARST) begin
       window_last_address <= 32'b01010101010101010101010101010101;
@@ -57,33 +83,17 @@ module disp_vramctrl (
     end
   end 
 
-  wire waiting_for_read, address_read_done;
-  clock_sync #(.WIDTH(1)) clock_sync(
-    .clk(ACLK),
-    .foreign_signal(VRSTART),
-    .result(vr_start)
-  );
-
-  assign ARVALID = (state == S_SETADDR);
-  assign RREADY = state == S_READ;
+  assign ARVALID = ar_state == AR_SADDR;
   assign ARADDR = current_address + DISPADDR;
-  assign waiting_for_read = vr_start && DISPON;
-  assign address_read_done = ARVALID && ARREADY;
+  wire start_reading = vr_start && DISPON;
+  wire address_read_done = ARVALID && ARREADY;
+  wire end_of_read = current_address >= window_last_address;
+  wire found_last = RVALID && RLAST;
 
-  always @(posedge ACLK) begin
-    // state
-    if (ARST) begin 
-      state <= S_IDEL;
-    end else begin
-      state <= next;
-    end
-  end
-
+  reg[31: 0] current_address;
   always @(posedge ACLK) begin
     // current_address
     if (ARST) begin
-      current_address <= 0;
-    end else if (state == S_IDEL) begin
       current_address <= 0;
     end else if (address_read_done) begin
       current_address <= current_address + bytesize_per_burst;
@@ -91,33 +101,80 @@ module disp_vramctrl (
   end
 
   always @(*) begin
-    // next
-    case (state)
-      S_IDEL:     if (waiting_for_read) next <= S_SETADDR;
-                  else next <= S_IDEL;
-      S_SETADDR:  if (ARREADY) begin
-                    next <= S_READ;
-                  end else begin
-                    next <= S_SETADDR;
-                  end
-      S_READ:     if(RLAST && RREADY && RVALID) begin
-                    if(current_address == window_last_address + bytesize_per_burst) begin
-                      next <= S_IDEL;
-                    end else if(BUF_WREADY) begin
-                      next <= S_SETADDR;
-                    end else begin
-                      next <= S_WAIT;
-                    end
-                  end else begin
-                    next <= S_READ;
-                  end
-      S_WAIT:     if(BUF_WREADY) begin
-                    next <= S_SETADDR;
-                  end else begin
-                    next <= S_WAIT;
-                  end
-      default:    next <= S_IDEL;
-    endcase
+    // ar_next
+    if (ARST) begin
+      ar_next <= AR_IDLE;
+    end else begin
+      // „ÇØ„ÇΩ„Åß„ÅãÊù°‰ª∂ÂàÜÂ≤ê
+      case (ar_state)
+        AR_IDLE: begin
+          if (start_reading && BUF_WREADY && !end_of_read) begin
+            ar_next <= AR_SADDR;
+          end else begin
+            ar_next <= AR_IDLE;
+          end
+        end
+        AR_SADDR: begin
+          if (address_read_done) begin
+            ar_next <= AR_WAIT;
+          end else begin
+            ar_next <= AR_SADDR;
+          end
+        end
+        AR_WAIT: begin
+          if (end_of_read) begin
+            ar_next <= AR_IDLE;
+          end else if (BUF_WREADY) begin
+            ar_next <= AR_SADDR;
+          end else begin
+            ar_next <= AR_WAIT;
+          end
+        end
+      endcase
+    end
+  end
+
+  // ----- State machine of DATA READ -----
+  localparam SR_WAIT  = 1'b0;
+  localparam SR_READ  = 1'b1;
+  reg[1: 0] sr_state, sr_next;
+
+  always @(posedge ACLK) begin
+    if (ARST) begin
+      sr_state <= SR_WAIT;
+    end else begin
+      sr_state <= sr_next;
+    end
+  end
+
+  assign RREADY = sr_state == SR_READ;
+
+  always @(*) begin
+    // sr_next
+    if(ARST) begin
+      sr_next <= SR_WAIT;
+    end else begin
+      case (sr_state)
+        SR_WAIT: begin
+          if (start_reading && unhandled_request > 0) begin
+            sr_next <= SR_READ;
+          end else begin
+            sr_next <= SR_WAIT;
+          end
+        end
+        SR_READ: begin
+          if(found_last) begin
+            if(unhandled_request == 0) begin
+              sr_next <= SR_WAIT; // Ë™≠„ÅøËæº„ÇÅ„Å™„ÅÑ
+            end else begin
+              sr_next <= SR_READ;
+            end
+          end else begin
+            sr_next <= SR_READ;
+          end
+        end
+      endcase
+    end
   end
 
 endmodule

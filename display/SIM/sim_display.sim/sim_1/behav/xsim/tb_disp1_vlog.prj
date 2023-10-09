@@ -18,7 +18,7 @@ verilog xil_defaultlib  --include "../../../../../disp_ip/hdl" --include "../../
 "../../../../sim_display.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
 
 sv xil_defaultlib  --include "../../../../../disp_ip/hdl" --include "../../../../sim_display.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
-"../../../../tb/tb_disp2.sv" \
+"../../../../tb/tb_disp1.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -2,83 +2,65 @@
 <GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1689139676">
   <File Type="ROUTE-PWR" Name="disp_vramctrl_power_routed.rpt"/>
   <File Type="PA-TCL" Name="disp_vramctrl.tcl"/>
-  <File Type="BITSTR-MMI" Name="disp_vramctrl.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="disp_vramctrl_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="disp_vramctrl_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="disp_vramctrl_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="disp_vramctrl_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="disp_vramctrl_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="disp_vramctrl_opt.dcp"/>
+  <File Type="BITSTR-MSK" Name="disp_vramctrl.msk"/>
+  <File Type="ROUTE-CLK" Name="disp_vramctrl_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="disp_vramctrl.vdi"/>
+  <File Type="BG-BIT" Name="disp_vramctrl.bit"/>
+  <File Type="BG-DRC" Name="disp_vramctrl.drc"/>
+  <File Type="BG-BGN" Name="disp_vramctrl.bgn"/>
+  <File Type="BG-BIN" Name="disp_vramctrl.bin"/>
+  <File Type="BITSTR-RBT" Name="disp_vramctrl.rbt"/>
+  <File Type="BITSTR-NKY" Name="disp_vramctrl.nky"/>
+  <File Type="BITSTR-BMM" Name="disp_vramctrl_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="disp_vramctrl.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="disp_vramctrl_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="disp_vramctrl.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="disp_vramctrl_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="disp_vramctrl.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="OPT-DRC" Name="disp_vramctrl_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="disp_vramctrl.hwdef"/>
-  <File Type="PWROPT-DCP" Name="disp_vramctrl_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="disp_vramctrl_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="disp_vramctrl_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="disp_vramctrl_placed.dcp"/>
   <File Type="PLACE-IO" Name="disp_vramctrl_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="disp_vramctrl_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="disp_vramctrl_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="disp_vramctrl_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="disp_vramctrl_routed.rqs"/>
   <File Type="PLACE-CTRL" Name="disp_vramctrl_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="disp_vramctrl_incremental_reuse_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="disp_vramctrl_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="disp_vramctrl.bin"/>
-  <File Type="PLACE-TIMING" Name="disp_vramctrl_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="disp_vramctrl_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="disp_vramctrl.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="disp_vramctrl_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="disp_vramctrl_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="disp_vramctrl_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="disp_vramctrl.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="disp_vramctrl_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="disp_vramctrl_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="disp_vramctrl_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="disp_vramctrl_routed_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-DRC" Name="disp_vramctrl_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="disp_vramctrl_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="disp_vramctrl_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="disp_vramctrl_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="disp_vramctrl_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="disp_vramctrl_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="disp_vramctrl_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="disp_vramctrl_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="disp_vramctrl_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="disp_vramctrl_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="disp_vramctrl_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="disp_vramctrl_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="disp_vramctrl_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="disp_vramctrl_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="disp_vramctrl_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="disp_vramctrl_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="disp_vramctrl_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="disp_vramctrl_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="disp_vramctrl_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="disp_vramctrl_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="disp_vramctrl_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="disp_vramctrl_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="disp_vramctrl_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="disp_vramctrl_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="disp_vramctrl_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="disp_vramctrl_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="disp_vramctrl_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="disp_vramctrl_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="disp_vramctrl_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="disp_vramctrl_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="disp_vramctrl_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="disp_vramctrl.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="disp_vramctrl_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="disp_vramctrl_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="disp_vramctrl.nky"/>
-  <File Type="BITSTR-BMM" Name="disp_vramctrl_bd.bmm"/>
+  <File Type="ROUTE-DRC-RPX" Name="disp_vramctrl_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="disp_vramctrl_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="disp_vramctrl.pdi"/>
   <File Type="RCFI_FILE" Name="disp_vramctrl.rcfi"/>
   <File Type="CFI_FILE" Name="disp_vramctrl.cfi"/>
   <File Type="RNPI_FILE" Name="disp_vramctrl.rnpi"/>
   <File Type="NPI_FILE" Name="disp_vramctrl.npi"/>
   <File Type="RBD_FILE" Name="disp_vramctrl.rbd"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="disp_vramctrl.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="disp_vramctrl.sysdef"/>
-  <File Type="BG-BGN" Name="disp_vramctrl.bgn"/>
-  <File Type="BG-DRC" Name="disp_vramctrl.drc"/>
-  <File Type="RDI-RDI" Name="disp_vramctrl.vdi"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="disp_vramctrl_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="disp_vramctrl_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../disp_ip/hdl/clock_sync.v">
@@ -202,5 +184,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
 </GenRun>

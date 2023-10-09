@@ -14,161 +14,65 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="16,907.356000 us"></ZoomStartTime>
-      <ZoomEndTime time="17,485.356001 us"></ZoomEndTime>
-      <Cursor1Time time="17,186.356000 us"></Cursor1Time>
+      <ZoomStartTime time="1,408,759.001 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,408,919.502 ns"></ZoomEndTime>
+      <Cursor1Time time="1,409,007.001 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="330"></NameColumnWidth>
-      <ValueColumnWidth column_width="148"></ValueColumnWidth>
+      <ValueColumnWidth column_width="140"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="37" />
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/ACLK" type="logic">
+   <WVObjectSize size="12" />
+   <wave_markers>
+      <marker time="925812000" label="" />
+      <marker time="1925812000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/axi_vip_0/inst/IF/PC/ACLK" type="logic">
       <obj_property name="ElementShortName">ACLK</obj_property>
       <obj_property name="ObjectShortName">ACLK</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/ARST" type="logic">
-      <obj_property name="ElementShortName">ARST</obj_property>
-      <obj_property name="ObjectShortName">ARST</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_vramctrl/ARADDR" type="array">
+      <obj_property name="ElementShortName">ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ARADDR[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/DSP_VSYNC_X" type="logic">
-      <obj_property name="ElementShortName">DSP_VSYNC_X</obj_property>
-      <obj_property name="ObjectShortName">DSP_VSYNC_X</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_vramctrl/ARVALID" type="logic">
+      <obj_property name="ElementShortName">ARVALID</obj_property>
+      <obj_property name="ObjectShortName">ARVALID</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/WRADDR" type="array">
-      <obj_property name="ElementShortName">WRADDR[15:0]</obj_property>
-      <obj_property name="ObjectShortName">WRADDR[15:0]</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_vramctrl/ARREADY" type="logic">
+      <obj_property name="ElementShortName">ARREADY</obj_property>
+      <obj_property name="ObjectShortName">ARREADY</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/BYTEEN" type="array">
-      <obj_property name="ElementShortName">BYTEEN[3:0]</obj_property>
-      <obj_property name="ObjectShortName">BYTEEN[3:0]</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_vramctrl/RLAST" type="logic">
+      <obj_property name="ElementShortName">RLAST</obj_property>
+      <obj_property name="ObjectShortName">RLAST</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/WREN" type="logic">
-      <obj_property name="ElementShortName">WREN</obj_property>
-      <obj_property name="ObjectShortName">WREN</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_vramctrl/RVALID" type="logic">
+      <obj_property name="ElementShortName">RVALID</obj_property>
+      <obj_property name="ObjectShortName">RVALID</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/WDATA" type="array">
-      <obj_property name="ElementShortName">WDATA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">WDATA[31:0]</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_vramctrl/RREADY" type="logic">
+      <obj_property name="ElementShortName">RREADY</obj_property>
+      <obj_property name="ObjectShortName">RREADY</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/RDADDR" type="array">
-      <obj_property name="ElementShortName">RDADDR[15:0]</obj_property>
-      <obj_property name="ObjectShortName">RDADDR[15:0]</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_vramctrl/BUF_WREADY" type="logic">
+      <obj_property name="ElementShortName">BUF_WREADY</obj_property>
+      <obj_property name="ObjectShortName">BUF_WREADY</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/RDEN" type="logic">
-      <obj_property name="ElementShortName">RDEN</obj_property>
-      <obj_property name="ObjectShortName">RDEN</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_buffer/FIFORST" type="logic">
+      <obj_property name="ElementShortName">FIFORST</obj_property>
+      <obj_property name="ObjectShortName">FIFORST</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/RDATA" type="array">
-      <obj_property name="ElementShortName">RDATA[31:0]</obj_property>
-      <obj_property name="ObjectShortName">RDATA[31:0]</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_buffer/FIFOIN" type="array">
+      <obj_property name="ElementShortName">FIFOIN[63:0]</obj_property>
+      <obj_property name="ObjectShortName">FIFOIN[63:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/DISPON" type="logic">
-      <obj_property name="ElementShortName">DISPON</obj_property>
-      <obj_property name="ObjectShortName">DISPON</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_buffer/FIFOWR" type="logic">
+      <obj_property name="ElementShortName">FIFOWR</obj_property>
+      <obj_property name="ObjectShortName">FIFOWR</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/DISPADDR" type="array">
-      <obj_property name="ElementShortName">DISPADDR[28:0]</obj_property>
-      <obj_property name="ObjectShortName">DISPADDR[28:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/DSP_IRQ" type="logic">
-      <obj_property name="ElementShortName">DSP_IRQ</obj_property>
-      <obj_property name="ObjectShortName">DSP_IRQ</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/BUF_UNDER" type="logic">
-      <obj_property name="ElementShortName">BUF_UNDER</obj_property>
-      <obj_property name="ObjectShortName">BUF_UNDER</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/BUF_OVER" type="logic">
-      <obj_property name="ElementShortName">BUF_OVER</obj_property>
-      <obj_property name="ObjectShortName">BUF_OVER</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_display_reg" type="logic">
-      <obj_property name="ElementShortName">wr_display_reg</obj_property>
-      <obj_property name="ObjectShortName">wr_display_reg</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_reg_dispaddr" type="logic">
-      <obj_property name="ElementShortName">wr_reg_dispaddr</obj_property>
-      <obj_property name="ObjectShortName">wr_reg_dispaddr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_reg_dispctrl" type="logic">
-      <obj_property name="ElementShortName">wr_reg_dispctrl</obj_property>
-      <obj_property name="ObjectShortName">wr_reg_dispctrl</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_reg_dispint" type="logic">
-      <obj_property name="ElementShortName">wr_reg_dispint</obj_property>
-      <obj_property name="ObjectShortName">wr_reg_dispint</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_reg_dispfifo" type="logic">
-      <obj_property name="ElementShortName">wr_reg_dispfifo</obj_property>
-      <obj_property name="ObjectShortName">wr_reg_dispfifo</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/rd_display_reg" type="logic">
-      <obj_property name="ElementShortName">rd_display_reg</obj_property>
-      <obj_property name="ObjectShortName">rd_display_reg</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_disp_addr" type="logic">
-      <obj_property name="ElementShortName">wr_disp_addr</obj_property>
-      <obj_property name="ObjectShortName">wr_disp_addr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_vblank" type="logic">
-      <obj_property name="ElementShortName">wr_vblank</obj_property>
-      <obj_property name="ObjectShortName">wr_vblank</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_dispon" type="logic">
-      <obj_property name="ElementShortName">wr_dispon</obj_property>
-      <obj_property name="ObjectShortName">wr_dispon</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_intclr" type="logic">
-      <obj_property name="ElementShortName">wr_intclr</obj_property>
-      <obj_property name="ObjectShortName">wr_intclr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_intenbl" type="logic">
-      <obj_property name="ElementShortName">wr_intenbl</obj_property>
-      <obj_property name="ObjectShortName">wr_intenbl</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_fifoover" type="logic">
-      <obj_property name="ElementShortName">wr_fifoover</obj_property>
-      <obj_property name="ObjectShortName">wr_fifoover</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/wr_fifounder" type="logic">
-      <obj_property name="ElementShortName">wr_fifounder</obj_property>
-      <obj_property name="ObjectShortName">wr_fifounder</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/rd_reg_dispaddr" type="logic">
-      <obj_property name="ElementShortName">rd_reg_dispaddr</obj_property>
-      <obj_property name="ObjectShortName">rd_reg_dispaddr</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/rd_reg_dispctrl" type="logic">
-      <obj_property name="ElementShortName">rd_reg_dispctrl</obj_property>
-      <obj_property name="ObjectShortName">rd_reg_dispctrl</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/rd_reg_dispint" type="logic">
-      <obj_property name="ElementShortName">rd_reg_dispint</obj_property>
-      <obj_property name="ObjectShortName">rd_reg_dispint</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/rd_reg_dispfifo" type="logic">
-      <obj_property name="ElementShortName">rd_reg_dispfifo</obj_property>
-      <obj_property name="ObjectShortName">rd_reg_dispfifo</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/DISPON" type="logic">
-      <obj_property name="ElementShortName">DISPON</obj_property>
-      <obj_property name="ObjectShortName">DISPON</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/disp_addr" type="array">
-      <obj_property name="ElementShortName">disp_addr[31:0]</obj_property>
-      <obj_property name="ObjectShortName">disp_addr[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/disp_ctrl" type="array">
-      <obj_property name="ElementShortName">disp_ctrl[31:0]</obj_property>
-      <obj_property name="ObjectShortName">disp_ctrl[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/disp_fifo" type="array">
-      <obj_property name="ElementShortName">disp_fifo[31:0]</obj_property>
-      <obj_property name="ObjectShortName">disp_fifo[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_regctrl/disp_int" type="array">
-      <obj_property name="ElementShortName">disp_int[31:0]</obj_property>
-      <obj_property name="ObjectShortName">disp_int[31:0]</obj_property>
+   <wvobject fp_name="/tb_disp2/dut/design_1_i/display_0/inst/disp_buffer/DSP_preDE" type="logic">
+      <obj_property name="ElementShortName">DSP_preDE</obj_property>
+      <obj_property name="ObjectShortName">DSP_preDE</obj_property>
    </wvobject>
 </wave_config>
