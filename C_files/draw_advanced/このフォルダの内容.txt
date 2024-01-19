@@ -1,0 +1,26 @@
+<draw_advancedフォルダの内容>
+
+★解像度はすべてVGAで実施します
+
+・patblt_performance_test.c
+　- 64×48のPATBLTを1/60秒内に何個描画できるか「半自動」で計測
+
+・bitblt_performance_test.c
+　- 64×48のBITBLTを1/60秒内に何個描画できるか「半自動」で計測
+　- SDカードに画像ファイル「JetCoaster_VGA.bin」が必要
+　- BSPプロジェクトの設定によりSDカード読み出しを可能にしておく
+
+・blendadd_test.c
+　- 背景画像にキャプチャ画像、その上に数字を描画しフチ部分の透明度を時間変化
+　- SDカードに画像ファイル「zugara_07_000.bin」「zugara_07_glow.bin」が必要
+　- BSPプロジェクトの設定によりSDカード読み出しを可能にしておく
+
+・描画回路の性能評価.xls
+　- patblt_performance_test.c、patblt_performance_test.cでの試作回路実測結果
+　- プログラムの最初にあるマクロ定義（"#define NORMAL_BITBLTs 296"など）を
+　　手動で値変更し、描画速度が60fpsとなる最大値をカット＆トライで求める
+　（60fpsなら'.'を、それ以下なら'X'を処理ごとに表示）
+　- この値は1/60秒に描画できる枚数であり、Excelのセル「描画枚数」に書き込むと
+　　描画性能が算出される
+　- キャプチャ回路は使わないので、"#define CAPTURE_ON"のマクロ定義をコメント
+　　アウトしておく

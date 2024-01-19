@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/HW101.COJTHW/COJT/donyu/adder/full_adder.v,1238462106,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/adder/half_adder.v,,full_adder,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/adder/half_adder.v,1238375984,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/kadai4/hdl/kadai4.v,,half_adder,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai1/hdl/extend_and.v,1682673354,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/kadai2/hdl/fifo.v,,extend_and,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai1/hdl/mult.v,1682676568,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/kadai4/SIM/tb/tb_kadai4.v,,mult,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai2/hdl/fifo.v,1684154810,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/adder/full_adder.v,,fifo,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai4/SIM/kadai4.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai4/SIM/tb/tb_kadai4.v,1684472887,verilog,,,,tb_kadai4,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai4/hdl/double_buffer.v,1684205183,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/kadai4/hdl/double_buffer_controller.v,,double_buffer,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai4/hdl/double_buffer_controller.v,1684205271,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/kadai1/hdl/extend_and.v,,double_buffer_controller,,,,,,,,
+C:/Users/HW101.COJTHW/COJT/donyu/kadai4/hdl/kadai4.v,1684480333,verilog,,C:/Users/HW101.COJTHW/COJT/donyu/kadai1/hdl/mult.v,,kadai4,,,,,,,,
